@@ -4,27 +4,27 @@
 
 
 def is_divisor(num, denom):
-	return float(num) / denom == num / denom
+    return float(num) / denom == num / denom
 
 
 def is_prime(num):
-	if num == 1:
-		return False
-	for denom in range(1,num+1):
-		if is_divisor(num, denom):
-			if (denom == num or denom ==1) == False:
-				return False
-	return True
+    if num == 1:
+        return False
+    for denom in range(1,num+1):
+        if is_divisor(num, denom):
+            if (denom == num or denom ==1) == False:
+                return False
+    return True
 
 
 def find_prime_numbers(range_):
-	prime_num = []
-	for i in range(1,range_+1):	
-		if is_prime(i) == False:
-			continue
-		else:
-			prime_num.append(i)
-	return prime_num
+    prime_num = []
+    for i in range(1,range_+1): 
+        if is_prime(i) == False:
+            continue
+        else:
+            prime_num.append(i)
+    return prime_num
 
 a1 = find_prime_numbers(1000)
 
@@ -46,9 +46,9 @@ check = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37,
 
 print(len(set(a1)), len(set(check)))
 def check_prime_numbers(answer):
-	if set(answer) == set(check):
- 		return True
- 	else:
- 		return False
+    if set(answer) == set(check):
+        return True
+    else:
+        return False
 
 print(check_prime_numbers(a1))
