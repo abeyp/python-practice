@@ -4,6 +4,9 @@
 
 
 input_str = ['Revelling, maths, decolor, hangout, smectic, Nicola, terrorizer, ruthenic, precede, unequalness, Ketoxime, addictedness, eyeservant, disproof, roentgenologically, Unacoustical, hypnotizing, bay, unecstatic, preoceanic, Mightiest, intersesamoid, dross, bigotry, especialness']
+#code to split string into seperate words
+input_str = input_str[0].replace(", ", " ").split()
+
 
 
 def reverse_func():
