@@ -8,3 +8,6 @@ input_str = ['Revelling, maths, decolor, hangout, smectic, Nicola, terrorizer, r
 
 def reverse_func():
 	pass
+
+for word in reversed(input_str):
+	print(word)
